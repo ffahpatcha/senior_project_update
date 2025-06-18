@@ -14,4 +14,4 @@
 - latency llm 3 ตัวทำให้ latency เพิ่ม
 - prompt clarification ต้องครอบคลุมมากกว่านี้ (คนที่ถามมาจะต้องบอกอาการตัวเองก่อน)
     https://furry-brownie-a7d.notion.site/11-6-2162b0daf61f807eaa1ddc59b7a7870e?source=copy_link
-- ก่อนโครงสร้าง XML ปรับว่ามันคืออะไร
+  - ก่อนโครงสร้าง XML ปรับว่ามันคืออะไร
