@@ -13,18 +13,51 @@
 
 ## ผลลัพธ์
 
-- เช็คว่า query นั้นจำเป็นต้อง clarify เพิ่มตาม expected หรือไม่  
-  Test Case: [question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_clari_test.xlsx)  
-  Output: [Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/output/results_clari_without_outofdomain.xlsx)  
-  ![output_clari](https://github.com/user-attachments/assets/aa0e3235-e478-48ff-b5ed-d9e86dd2bb6e)
+### 1. ตรวจสอบว่า Query จำเป็นต้อง Clarify เพิ่มเติมหรือไม่
+  ผลลัพธ์พบว่าทุก test cases เป็นไปตาม expected
+**Test Case:**  
+[question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_clari_test.xlsx)
 
-- เช็คว่า query นั้นถูกแยก category ตรงตาม expected หรือไม่  
-  Test Case: [question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_2categorylevel.xlsx)  
-  Output: [Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/output/results25_6.xlsx)  
-  ![output_classi](https://github.com/user-attachments/assets/e08eeb0b-ed43-458f-8021-c59f1a018ed6)
+**Output:**  
+[Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/output/results_clari_without_outofdomain.xlsx)
 
-- เช็คว่า query นั้นถูกจัดว่าเป็น query out of domain ตาม expected หรือไม่  
-  Test Case(ใหม่): [question_outofdomain_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx)  
-  Output: [Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/output/results_testout_without_outofdomain.xlsx)  
-  ![output_clari_new_test_case](https://github.com/user-attachments/assets/cf109945-8001-42fb-92d5-8f0f1fbee405)
+![Clarification Output](https://github.com/user-attachments/assets/aa0e3235-e478-48ff-b5ed-d9e86dd2bb6e)
+
+---
+
+### 2. ตรวจสอบว่า Query ถูกแยก Category ตรงตาม Expected หรือไม่
+
+**การแยกหมวดหมู่หลัก (Level 1):**
+
+- พบว่า **2 cases** แยกไม่ตรงตาม expected เป็น query เดียวกันกับที่เคยเกิดปัญหาในรอบก่อน 
+- และ **3 cases** ระบบเกิด error
+
+**การแยกหมวดหมู่ย่อย (Level 2):**
+
+- พบว่า **2 cases** แยกไม่ตรงตาม expected  
+- และ **3 cases** ระบบเกิด error   
+- โดย **2 cases ที่ error** เป็น query เดียวกันกับที่เคยเกิดปัญหาในรอบก่อน  เนื่องจากยังไม่ได้ปรับ prompt
+  ([ดูรายละเอียดผลลัพธ์เดิม](https://github.com/ffahpatcha/senior_project_update/tree/main/seniorProject_withStruture_Output_11_6#%E0%B8%9C%E0%B8%A5%E0%B8%A5%E0%B8%B1%E0%B8%9E%E0%B8%98%E0%B9%8C))
+  
+**Test Case:**  
+[question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_2categorylevel.xlsx)
+
+**Output:**  
+[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/output/results25_6.xlsx)
+
+![Classification Output](https://github.com/user-attachments/assets/e08eeb0b-ed43-458f-8021-c59f1a018ed6)
+
+---
+
+### 3. ตรวจสอบว่า Query ถูกจัดว่าเป็น Out of Domain ตาม Expected หรือไม่
+
+พบว่ายังมี 2 case ที่ยังไม่ถูกต้องตาม expected
+
+**Test Case:**  
+[question_outofdomain_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx)
+
+**Output:**  
+[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/output/results_testout_without_outofdomain.xlsx)
+
+![Out of Domain Output](https://github.com/user-attachments/assets/cf109945-8001-42fb-92d5-8f0f1fbee405)
 
