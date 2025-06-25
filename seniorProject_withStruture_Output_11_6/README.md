@@ -20,6 +20,8 @@
 
 ### 1. ตรวจสอบว่า Query จำเป็นต้อง Clarify เพิ่มเติมหรือไม่
 
+ผลลัพธ์พบว่า มี **13 cases** ที่ไม่เป็นคำถามที่ต้องการ clarify เพิ่มเติม  
+
 **Test Case:**  
 [question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/question_clari_test.xlsx)
 
@@ -34,6 +36,16 @@
 ---
 
 ### 2. ตรวจสอบว่า Query ถูกแยก Category ตรงตาม Expected หรือไม่
+
+**การแยกหมวดหมู่หลัก (Level 1):**
+
+- พบว่า **2 cases** แยกไม่ตรงตาม expected 
+- และ **1 cases** ระบบเกิด error
+
+**การแยกหมวดหมู่ย่อย (Level 2):**
+
+- พบว่า **2 cases** แยกไม่ตรงตาม expected  
+- และ **1 cases** ระบบเกิด error   
 
 **Test Case:**  
 [question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/question_2categorylevel.xlsx)
