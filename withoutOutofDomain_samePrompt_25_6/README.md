@@ -13,7 +13,7 @@
 
 ## ผลลัพธ์
 
-### 1. ตรวจสอบว่า Query จำเป็นต้อง Clarify เพิ่มเติมหรือไม่
+### 1. ตรวจสอบว่า Query จำเป็นต้อง Clarify เพิ่มเติมหรือไม่ (test cases เดิม)
   ผลลัพธ์พบว่าทุก test cases เป็นไปตาม expected
   
 **Test Case:**  
@@ -25,8 +25,20 @@
 ![Clarification Output](https://github.com/user-attachments/assets/aa0e3235-e478-48ff-b5ed-d9e86dd2bb6e)
 
 ---
+### 2. ตรวจสอบว่า Query จำเป็นต้อง Clarify เพิ่มเติมหรือไม่ (test cases ใหม่: query ที่ดู out of domain ชัดเจน)
 
-### 2. ตรวจสอบว่า Query ถูกแยก Category ตรงตาม Expected หรือไม่
+พบว่ายังมี 2 case ที่ยังไม่ถูกต้องตาม expected
+
+**Test Case:**  
+[question_outofdomain_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx)
+
+**Output:**  
+[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/output_24_6/results_testout_without_outofdomain.xlsx)
+
+![Out of Domain Output](https://github.com/user-attachments/assets/cf109945-8001-42fb-92d5-8f0f1fbee405)
+---
+
+### 3. ตรวจสอบว่า Query ถูกแยก Category ตรงตาม Expected หรือไม่
 
 **การแยกหมวดหมู่หลัก (Level 1):**
 
@@ -49,16 +61,4 @@
 ![Classification Output](https://github.com/user-attachments/assets/e08eeb0b-ed43-458f-8021-c59f1a018ed6)
 
 ---
-
-### 3. ตรวจสอบว่า Query ถูกจัดว่าเป็น Out of Domain ตาม Expected หรือไม่
-
-พบว่ายังมี 2 case ที่ยังไม่ถูกต้องตาม expected
-
-**Test Case:**  
-[question_outofdomain_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx)
-
-**Output:**  
-[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/output_24_6/results_testout_without_outofdomain.xlsx)
-
-![Out of Domain Output](https://github.com/user-attachments/assets/cf109945-8001-42fb-92d5-8f0f1fbee405)
 
