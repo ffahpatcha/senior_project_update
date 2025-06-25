@@ -1,4 +1,4 @@
-![workflow2-Copy of Page-16 drawio](https://github.com/user-attachments/assets/7df2023b-dd37-43bb-996d-c574bb822cbd)# Senior Project Date 18/6
+# Senior Project Date 18/6
 ปรับ classification agent ต่อ
 
 ## Folders ที่มีการปรับหลัก
