@@ -26,7 +26,10 @@
 **Output:**  
 [Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/output/results_clari.xlsx)
 
-![Clarification Output](https://github.com/user-attachments/assets/a8992b4d-9c00-4eee-81f3-4b3ce40948ab)
+![output_clari](https://github.com/user-attachments/assets/a9145a4f-eabb-4b75-b21b-a576e9484b64)
+
+
+
 
 ---
 
