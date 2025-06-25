@@ -19,7 +19,7 @@
 ## ผลลัพธ์
 - เช็คว่า query นั้นจำเป็นต้อง clarify เพิ่มตาม expected หรือไม่ (Test Case Files:[question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/question_clari_test.xlsx)
   ![output_clari](https://github.com/user-attachments/assets/a8992b4d-9c00-4eee-81f3-4b3ce40948ab)
-- เช็คว่า query นั้นถูกแยก category ตรงตาม expected หรือไม่ (Test Case Files:[question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/blob/main/seniorProject_withStruture_Output_11_6/test_case/question_2categorylevel.xlsx)
+- เช็คว่า query นั้นถูกแยก category ตรงตาม expected หรือไม่ (Test Case Files:[question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/question_2categorylevel.xlsx)
   ![output_classi](https://github.com/user-attachments/assets/1352b067-62eb-4a04-99b5-e32761a73922)
 
 ### Test Case Files
