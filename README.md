@@ -9,6 +9,7 @@
   
 - [**seniorProject_withoutStructure_Output_18_6**](https://github.com/ffahpatcha/senior_project_update/tree/main/seniorProject_withoutStructure_Output_18_6)  
   - ปรับ `prompt` ของส่วน `clarify_needed` ให้มีความ **ครอบคลุมมากขึ้น**
+  - สรุปผล [result](https://github.com/ffahpatcha/senior_project_update/tree/main/seniorProject_withoutStructure_Output_18_6#%E0%B8%9C%E0%B8%A5%E0%B8%A5%E0%B8%B1%E0%B8%9E%E0%B8%98%E0%B9%8C)
 
 - [**withoutOutofDomain_samePrompt_25_6**](https://github.com/ffahpatcha/senior_project_update/tree/main/withoutOutofDomain_samePrompt_25_6)  
   - **ตัดส่วนการแยก out_of_domain ออก** โดยที่ `prompt` ของ `clarify_needed` และ `classification category` ยังคง **เหมือนเดิม**
