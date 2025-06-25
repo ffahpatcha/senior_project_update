@@ -25,10 +25,22 @@
 
 ![output_clari](https://github.com/user-attachments/assets/88e2cf36-1172-4514-800d-59d0ba401762)
 
+---
+### 2. ตรวจสอบว่า Query จำเป็นต้อง Clarify เพิ่มเติมหรือไม่ (test cases ใหม่: query ที่ดู out of domain ชัดเจน)
+
+พบว่ายังมี 2 case ที่ยังไม่ถูกต้องตาม expected
+
+**Test Case:**  
+[question_outofdomain_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx)
+
+**Output:**  
+[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/output_24_6/results_testout_without_outofdomain.xlsx)
+![output_clari_outofdomain](https://github.com/user-attachments/assets/9fab2d9b-3ca0-42b3-b542-027d19b3f694)
+
 
 ---
 
-### 2. ตรวจสอบว่า Query ถูกแยก Category ตรงตาม Expected หรือไม่
+### 3. ตรวจสอบว่า Query ถูกแยก Category ตรงตาม Expected หรือไม่
 
 **การแยกหมวดหมู่หลัก (Level 1):**
 
