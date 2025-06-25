@@ -13,4 +13,5 @@
 
 - [**withoutOutofDomain_samePrompt_25_6**](https://github.com/ffahpatcha/senior_project_update/tree/main/withoutOutofDomain_samePrompt_25_6)  
   - **ตัดส่วนการแยก out_of_domain ออก** โดยที่ `prompt` ของ `clarify_needed` และ `classification category` ยังคง **เหมือนเดิม**
+  - ปรับเอาส่วนเช็ค out of domain จาก query ออก [query_classification_agent.py (lines 54–170)](https://github.com/ffahpatcha/senior_project_update/blob/main/seniorProject_withoutStructure_Output_18_6/agents/query_classification_agent.py#L54-L170)
 
