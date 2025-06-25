@@ -1,4 +1,4 @@
-![output_classi](https://github.com/user-attachments/assets/91373f40-cb46-4ddf-978d-789db43add97)# Senior Project Date 25/6
+# Senior Project Date 25/6
 ปรับ classification agent ต่อ
 
 ## Folders ที่มีการปรับหลัก
