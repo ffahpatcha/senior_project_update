@@ -34,7 +34,7 @@
 [question_outofdomain_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx)
 
 **Output:**  
-[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/output_24_6/results_testout_without_outofdomain.xlsx)
+[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/pipeline_v2_clarity_first_25_6/test_case/results_cali_pipeline_v2_clarity_first_out_of_domain.xlsx)
 ![output_clari_outofdomain](https://github.com/user-attachments/assets/9fab2d9b-3ca0-42b3-b542-027d19b3f694)
 
 
