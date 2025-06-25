@@ -24,7 +24,8 @@
 **Output:**  
 [Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/pipeline_v2_clarity_first_25_6/test_case/results_cali_pipeline_v2_clarity_first.xlsx)
 
-![Clarification Output](https://github.com/user-attachments/assets/dd42081c-054b-4ba5-a9c8-9c303805dffd)
+![output_clari](https://github.com/user-attachments/assets/88e2cf36-1172-4514-800d-59d0ba401762)
+
 
 ---
 
@@ -32,21 +33,20 @@
 
 **การแยกหมวดหมู่หลัก (Level 1):**
 
-- พบว่า **2 cases** แยกไม่ตรงตาม expected เป็น query เดียวกันกับที่เคยเกิดปัญหาในรอบก่อน 
-- และ **3 cases** ระบบเกิด error
+- พบว่า **2 cases** แยกไม่ตรงตาม expected เป็น query เดียวกันกับในรอบก่อน
+- และ **2 cases**  ที่เกิด clarification_needed=True
 
 **การแยกหมวดหมู่ย่อย (Level 2):**
 
-- พบว่า **2 cases** แยกไม่ตรงตาม expected  
-- และ **3 cases** ระบบเกิด error   
-- โดย **2 cases ที่ error** เป็น query เดียวกันกับที่เคยเกิดปัญหาในรอบก่อน  
-  ([ดูรายละเอียดผลลัพธ์เดิม](https://github.com/ffahpatcha/senior_project_update/tree/main/seniorProject_withStruture_Output_11_6#%E0%B8%9C%E0%B8%A5%E0%B8%A5%E0%B8%B1%E0%B8%9E%E0%B8%98%E0%B9%8C))
+- พบว่า **2 cases** แยกไม่ตรงตาม expected  เป็น query เดียวกันกับในรอบก่อน ([ดูรายละเอียดผลลัพธ์เดิม](https://github.com/ffahpatcha/senior_project_update/tree/main/seniorProject_withStruture_Output_11_6#%E0%B8%9C%E0%B8%A5%E0%B8%A5%E0%B8%B1%E0%B8%9E%E0%B8%98%E0%B9%8C))
+- และ **2 cases** ที่เกิด clarification_needed=True
 
 **Test Case:**  
 [question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/pipeline_v2_clarity_first_25_6/test_case/question_2categorylevel.xlsx)
 
 **Output:**  
 [Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/pipeline_v2_clarity_first_25_6/test_case/results_pipeline_v2_clarity_first.xlsx)
+![output_classi](https://github.com/user-attachments/assets/33e59091-8a89-43fe-9131-5d34a6c58b0c)
 
-![Classification Output](https://github.com/user-attachments/assets/0033ecfa-f2d3-401e-ac76-4f890d1ed5dd)
+
 
