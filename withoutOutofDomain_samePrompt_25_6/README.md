@@ -9,7 +9,7 @@
 
 ## ปัญหา/แก้เพิ่ม
 - output จาก test case(เดิม) [question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_2categorylevel.xlsx) พบว่า llm ให้ result ตรงตาม expected ทั้งหมด
-- ได้ทดลองเพิ่มเติมโดยเพิ่ม test case  [question_outofdomain_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx.xlsx) ที่เห็นชัดว่าเป็น out of domain ชัดเจน มาทดลอง พบว่ายังมี 2 case ที่ไม่ตรงตาม expected
+- ได้ทดลองเพิ่มเติมโดยเพิ่ม test case  [question_outofdomain_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx) ที่เห็นชัดว่าเป็น out of domain ชัดเจน มาทดลอง พบว่ายังมี 2 case ที่ไม่ตรงตาม expected
 
 ## ผลลัพธ์
 
