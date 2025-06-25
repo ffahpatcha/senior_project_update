@@ -26,7 +26,8 @@
 - เช็คว่า query นั้นถูกแยก category ตรงตาม expected หรือไม่  
   Test Case: [question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/question_2categorylevel.xlsx)  
   Output: [Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/output/category_classi_result.xlsx)  
-   ![output_classi](https://github.com/user-attachments/assets/1352b067-62eb-4a04-99b5-e32761a73922)
+  ![output_classi](https://github.com/user-attachments/assets/2712d464-b016-4a9c-91da-517c2920e77d)
+
 
 
 
