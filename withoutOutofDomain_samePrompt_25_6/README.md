@@ -20,7 +20,7 @@
 [question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_clari_test.xlsx)
 
 **Output:**  
-[Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/output/results_clari_without_outofdomain.xlsx)
+[Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/output_24_6/results_clari_without_outofdomain.xlsx)
 
 ![Clarification Output](https://github.com/user-attachments/assets/aa0e3235-e478-48ff-b5ed-d9e86dd2bb6e)
 
