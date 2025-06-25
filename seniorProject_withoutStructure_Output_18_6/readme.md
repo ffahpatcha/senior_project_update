@@ -4,6 +4,9 @@
 ## Folders ที่มีการปรับหลัก
 - \agents\query_classification_agent.py
   - ใช้ llm 3 ตัวในการแยก out of domain,clarification_needed,classify_categories เหมือน 11/6
+    ![workflow2-Page-16 drawio (2)](https://github.com/user-attachments/assets/e1b91215-8039-4397-a26c-180c9497a634)
+
+    
   - ปรับ prompt ส่วน clarification_needed ให้ครอบคลุมมากขึ้น
 - main_graph.py
 - state_schema.py
