@@ -14,14 +14,16 @@
 
 ## ผลลัพธ์
 
-- เช็คว่า query นั้นจำเป็นต้อง clarify เพิ่มตาม expected หรือไม่  
+- เช็คว่า query นั้นจำเป็นต้อง clarify เพิ่มตาม expected หรือไม่
+  ผลลัพธ์พบว่ามี 9 cases ที่ไม่เป็นคำถามที่ต้องการ clarify เพิ่มเติม และเมื่อดูสาเหตุที่ไม่ตรงตาม expected พบว่า query เหล่านั้นถูกพบว่าเป็น out_of_domain 
   Test Case: [question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/question_clari_test.xlsx)  
   Output: [Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/output/results_clari3.xlsx)  
   ![output_clari](https://github.com/user-attachments/assets/dd42081c-054b-4ba5-a9c8-9c303805dffd)
 
 
 
-- เช็คว่า query นั้นถูกแยก category ตรงตาม expected หรือไม่  
+- เช็คว่า query นั้นถูกแยก category ตรงตาม expected หรือไม่
+  
   Test Case: [question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/question_2categorylevel.xlsx)  
   Output: [Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/output/results4.xlsx)  
   ![output_classi](https://github.com/user-attachments/assets/0033ecfa-f2d3-401e-ac76-4f890d1ed5dd)
