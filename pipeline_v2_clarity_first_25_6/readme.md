@@ -5,8 +5,8 @@
 - \agents\query_classification_agent.py
   - ใช้ llm 3 ตัวในการแยก out of domain,clarification_needed,classify_categories แต่มีการปรับลำดับ pipeline ให้มีการเช็ค clarification เริ่มก่อน
     ![workflow2-Copy of Page-16 drawio](https://github.com/user-attachments/assets/47048245-7046-422f-b858-542b5d88ef61)
-  - prompt ในแต่ละส่วนเหมือน [seniorProject_withoutStructure_Output_18_6](https://github.com/ffahpatcha/senior_project_update/tree/main/seniorProject_withoutStructure_Output_18_6)
-
+  - prompt ในแต่ละส่วนเหมือน  [seniorProject_withoutStructure_Output_18_6](https://github.com/ffahpatcha/senior_project_update/blob/main/seniorProject_withoutStructure_Output_18_6/agents/query_classification_agent.py)
+    
 ## ปัญหา/แก้เพิ่ม
 - output จาก test case(เดิม) [question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_2categorylevel.xlsx) พบว่า llm ให้ result ตรงตาม expected ทั้งหมด
 - ได้ทดลองเพิ่มเติมโดยเพิ่ม test case  [question_outofdomain_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx) ที่เห็นชัดว่าเป็น out of domain ชัดเจน มาทดลอง พบว่ายังมี 2 case ที่ไม่ตรงตาม expected
