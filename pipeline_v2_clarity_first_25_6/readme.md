@@ -3,17 +3,13 @@
 
 ## Folders ที่มีการปรับหลัก
 - \agents\query_classification_agent.py
-  - ใช้ llm 3 ตัวในการแยก out of domain,clarification_needed,classify_categories โดยมีการปรับลำดับ pipeline ให้มีการแยก clarification ก่อน
-    # Senior Project Date 18/6
-ปรับ classification agent ต่อ
+- ใช้ llm 3 ตัวในการแยก out of domain,clarification_needed,classify_categories โดยมีการปรับลำดับ pipeline ให้มีการแยก clarification ก่อน
 
 ## Folders ที่มีการปรับหลัก
 - \agents\query_classification_agent.py
   - ใช้ llm 3 ตัวในการแยก out of domain,clarification_needed,classify_categories เหมือน 11/6
-    ![workflow2-Page-16 drawio (2)](https://github.com/user-attachments/assets/e1b91215-8039-4397-a26c-180c9497a634)
+    ![workflow2-Copy of Page-16 drawio](https://github.com/user-attachments/assets/47048245-7046-422f-b858-542b5d88ef61)
   - prompt ในแต่ละส่วนเหมือน [seniorProject_withoutStructure_Output_18_6](https://github.com/ffahpatcha/senior_project_update/tree/main/seniorProject_withoutStructure_Output_18_6)
-- main_graph.py
-- state_schema.py
 
 ## ปัญหา/แก้เพิ่ม
 - พอมาใช้จริงส่วนของ out of domain กับ clarification_needed ยังมีส่วนที่ intercept กันอยู่
