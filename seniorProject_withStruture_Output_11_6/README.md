@@ -1,10 +1,11 @@
-# Senior Project Date 11/6
+![workflow2-Page-16 drawio](https://github.com/user-attachments/assets/358e4415-1e80-49ad-b8a6-e8ea7848e469)# Senior Project Date 11/6
 ปรับ classification agent ต่อ
 
 ## Folders ที่มีการปรับหลัก
 - \agents\query_classification_agent.py
   - ปรับเป็นใช้ llm 3 ตัวในการแยก out of domain,clarification_needed,classify_categories
-    ![workflow2-Page-16 drawio (1)](https://github.com/user-attachments/assets/0c827799-dca4-418d-923f-7f9f2c44d8b5)
+   ![workflow2-Page-16 drawio (2)](https://github.com/user-attachments/assets/0a78388d-75e6-4619-9a5b-329968e16532)
+
   - ปรับ prompt ให้ครอบคลุม use case ของแต่ละส่วนข้างต้น
   - ปรับโครงสร้าง prompt ให้มีการใช้ XML 
 - \utils\llm_utils.py โดยปรับให้ output จาก llm มี structured_output_schema และเป็น Pydantic schema
