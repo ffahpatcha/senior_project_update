@@ -17,7 +17,8 @@
 - เช็คว่า query นั้นจำเป็นต้อง clarify เพิ่มตาม expected หรือไม่  
   Test Case: [question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/question_clari_test.xlsx)  
   Output: [Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/output/results_clari3.xlsx)  
-  ![output_clari](https://github.com/user-attachments/assets/fadb9e68-d350-4fd2-bae5-5fb598234a3b)
+  ![output_clari](https://github.com/user-attachments/assets/dd42081c-054b-4ba5-a9c8-9c303805dffd)
+
 
 
 - เช็คว่า query นั้นถูกแยก category ตรงตาม expected หรือไม่  
