@@ -15,8 +15,7 @@
 
 ### 1. ตรวจสอบว่า Query จำเป็นต้อง Clarify เพิ่มเติมหรือไม่
 
-ผลลัพธ์พบว่า มี **9 cases** ที่ไม่เป็นคำถามที่ต้องการ clarify เพิ่มเติม  
-เมื่อพิจารณาสาเหตุที่ไม่ตรงตาม expected พบว่า query เหล่านั้นถูกจัดว่าเป็น **out_of_domain**
+ผลลัพธ์พบว่าทุก test cases เป็นไปตาม expected
 
 **Test Case:**  
 [question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/pipeline_v2_clarity_first_25_6/test_case/question_clari_test.xlsx)
