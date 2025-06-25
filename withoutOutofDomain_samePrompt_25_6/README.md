@@ -15,6 +15,7 @@
 
 ### 1. ตรวจสอบว่า Query จำเป็นต้อง Clarify เพิ่มเติมหรือไม่
   ผลลัพธ์พบว่าทุก test cases เป็นไปตาม expected
+  
 **Test Case:**  
 [question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_clari_test.xlsx)
 
