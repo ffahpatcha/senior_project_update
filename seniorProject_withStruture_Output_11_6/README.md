@@ -4,6 +4,7 @@
 ## Folders ที่มีการปรับหลัก
 - \agents\query_classification_agent.py
   - ปรับเป็นใช้ llm 3 ตัวในการแยก out of domain,clarification_needed,classify_categories
+    ![workflow2-Page-16 drawio (1)](https://github.com/user-attachments/assets/0c827799-dca4-418d-923f-7f9f2c44d8b5)
   - ปรับ prompt ให้ครอบคลุม use case ของแต่ละส่วนข้างต้น
   - ปรับโครงสร้าง prompt ให้มีการใช้ XML 
 - \utils\llm_utils.py โดยปรับให้ output จาก llm มี structured_output_schema และเป็น Pydantic schema
