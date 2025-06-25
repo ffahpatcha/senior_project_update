@@ -33,13 +33,13 @@
 
 **การแยกหมวดหมู่หลัก (Level 1):**
 
-- พบว่า **2 cases** แยกไม่ตรงตาม expected  
+- พบว่า **2 cases** แยกไม่ตรงตาม expected เป็น query เดียวกันกับที่เคยเกิดปัญหาในรอบก่อน 
 - และ **3 cases** ระบบเกิด error
 
 **การแยกหมวดหมู่ย่อย (Level 2):**
 
 - พบว่า **2 cases** แยกไม่ตรงตาม expected  
-- และ **3 cases** ระบบเกิด error เช่นกัน  
+- และ **3 cases** ระบบเกิด error   
 - โดย **2 cases ที่ error** เป็น query เดียวกันกับที่เคยเกิดปัญหาในรอบก่อน  
   ([ดูรายละเอียดผลลัพธ์เดิม](https://github.com/ffahpatcha/senior_project_update/tree/main/seniorProject_withStruture_Output_11_6#%E0%B8%9C%E0%B8%A5%E0%B8%A5%E0%B8%B1%E0%B8%9E%E0%B8%98%E0%B9%8C))
 
