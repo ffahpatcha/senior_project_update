@@ -5,7 +5,8 @@
 - \agents\query_classification_agent.py
   - ปรับเอาส่วนเช็ค out of domain จาก query ออก
   - ใช้ llm 2 ตัวในการแยก clarification_needed,classify_categories (จากเดิม llm 3 ตัว)
-  - prompt ในส่วน clarification_needed,classify_categories ยังคงเหมือนเดิมกับ version 
+  - prompt ในส่วน clarification_needed,classify_categories ยังคงเหมือนเดิมกับ version [query_classification_agent.py (lines 174–400)](https://github.com/ffahpatcha/senior_project_update/blob/main/seniorProject_withoutStructure_Output_18_6/agents/query_classification_agent.py#L30-L50)
+
 - main_graph.py
 - state_schema.py
 
