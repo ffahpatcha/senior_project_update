@@ -24,7 +24,7 @@
   ![output_classi](https://github.com/user-attachments/assets/e08eeb0b-ed43-458f-8021-c59f1a018ed6)
 
 - เช็คว่า query นั้นถูกจัดว่าเป็น query out of domain ตาม expected หรือไม่  
-  Test Case(ใหม่): [question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx)  
+  Test Case(ใหม่): [question_outofdomain_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx)  
   Output: [Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/output/results_testout_without_outofdomain.xlsx)  
   ![output_clari_new_test_case](https://github.com/user-attachments/assets/cf109945-8001-42fb-92d5-8f0f1fbee405)
 
