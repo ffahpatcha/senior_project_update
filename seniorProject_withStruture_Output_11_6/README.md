@@ -21,12 +21,12 @@
 - เช็คว่า query นั้นจำเป็นต้อง clarify เพิ่มตาม expected หรือไม่  
   Test Case: [question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/question_clari_test.xlsx)  
   Output: [Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/output/results_clari.xlsx)  
-  ![Clarification Output](https://github.com/ffahpatcha/senior_project_update/blob/main/assets/output_clari.png?raw=true)
+ ![output_clari](https://github.com/user-attachments/assets/a8992b4d-9c00-4eee-81f3-4b3ce40948ab)
 
 - เช็คว่า query นั้นถูกแยก category ตรงตาม expected หรือไม่  
   Test Case: [question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/question_2categorylevel.xlsx)  
   Output: [Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/output/category_classi_result.xlsx)  
-  ![Classification Output](https://github.com/ffahpatcha/senior_project_update/blob/main/assets/output_classi.png?raw=true)
+   ![output_classi](https://github.com/user-attachments/assets/1352b067-62eb-4a04-99b5-e32761a73922)
 
 
 
