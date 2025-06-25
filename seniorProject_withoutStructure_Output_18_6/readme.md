@@ -1,4 +1,4 @@
-![output_classi](https://github.com/user-attachments/assets/d707dedd-3508-4567-9530-64f71ea5ff5f)# Senior Project Date 18/6
+# Senior Project Date 18/6
 ปรับ classification agent ต่อ
 
 ## Folders ที่มีการปรับหลัก
@@ -15,11 +15,13 @@
 ## ผลลัพธ์
 
 - เช็คว่า query นั้นจำเป็นต้อง clarify เพิ่มตาม expected หรือไม่  
-  Test Case: [question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/question_clari_test.xlsx)  
-  Output: [Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/output/results_clari.xlsx)  
- ![output_clari](https://github.com/user-attachments/assets/a8992b4d-9c00-4eee-81f3-4b3ce40948ab)
+  Test Case: [question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/question_clari_test.xlsx)  
+  Output: [Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/output/results_clari3.xlsx)  
+  ![output_clari](https://github.com/user-attachments/assets/fadb9e68-d350-4fd2-bae5-5fb598234a3b)
+
 
 - เช็คว่า query นั้นถูกแยก category ตรงตาม expected หรือไม่  
-  Test Case: [question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/question_2categorylevel.xlsx)  
-  Output: [Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withStruture_Output_11_6/test_case/output/category_classi_result.xlsx)  
-   ![output_classi](https://github.com/user-attachments/assets/a429e06b-280a-455c-8849-4bb0636d92f3)
+  Test Case: [question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/question_2categorylevel.xlsx)  
+  Output: [Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/output/result4.xlsx)  
+  ![output_classi](https://github.com/user-attachments/assets/0033ecfa-f2d3-401e-ac76-4f890d1ed5dd)
+
