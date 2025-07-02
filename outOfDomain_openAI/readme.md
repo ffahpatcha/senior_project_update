@@ -1,15 +1,11 @@
-# Senior Project Date 18/6
+# Out of domain OpenAI Date 2/7
 ปรับ classification agent ต่อ
 
 ## Folders ที่มีการปรับหลัก
-- \agents\query_classification_agent.py
-  - ใช้ llm 3 ตัวในการแยก out of domain,clarification_needed,classify_categories เหมือน 11/6
-    ![workflow2-Page-16 drawio (2)](https://github.com/user-attachments/assets/e1b91215-8039-4397-a26c-180c9497a634)
-
-    
-  - ปรับ prompt ส่วน clarification_needed ให้ครอบคลุมมากขึ้น
-- main_graph.py
-- state_schema.py
+- ตรวจ Out-of-Domain ด้วย Guardrails [Guardrails ของ OpenAI Agents](https://openai.github.io/openai-agents-python/guardrails/) โดย integrate ใช้รวมกับ clarification และ classification (langgrah เดิม)
+  - ปรับเอา function ตรวจ out of domain เดิมออก นำ dental_guardrail_agent มาใช้ตรวจ out of domain แทน 
+  - ส่วนของ prompt ของ dental_guardrail_agent [dental_guardrail_agent.py](https://github.com/ffahpatcha/senior_project_update/blob/main/outOfDomain_openAI/my_agents/dental_guardrail_agent.py) มาจาก [query_classification_agent.py (บรรทัด 61–164)](https://github.com/ffahpatcha/senior_project_update/blob/main/seniorProject_withoutStructure_Output_18_6/agents/query_classification_agent.py#L61-L164)
+- pipeline: check Out-of-Domain ด้วย Guardrails จาก OpenAI -> check clarification -> check classification
 
 ## ปัญหา/แก้เพิ่ม
 - พอมาใช้จริงส่วนของ out of domain กับ clarification_needed ยังมีส่วนที่ intercept กันอยู่
@@ -26,9 +22,7 @@
 [question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/question_clari_test.xlsx)
 
 **Output:**  
-[Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/output/results_clari3.xlsx)
-
-![Clarification Output](https://github.com/user-attachments/assets/dd42081c-054b-4ba5-a9c8-9c303805dffd)
+[Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI/test_case/question_clari_test.xlsx)
 
 ---
 
@@ -50,7 +44,7 @@
 [question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/question_2categorylevel.xlsx)
 
 **Output:**  
-[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/output/results4.xlsx)
+[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI/test_case/results_outOfDomain_openAI.xlsx)
 
 ![Classification Output](https://github.com/user-attachments/assets/0033ecfa-f2d3-401e-ac76-4f890d1ed5dd)
 
