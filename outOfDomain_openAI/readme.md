@@ -29,7 +29,7 @@
 ### 2. ตรวจสอบว่า Query เป็นคำถาม out 0f domain หรือไม่ (test cases ใหม่: query ที่ดู out of domain ชัดเจน)
 
 พบว่ายังมี 1 case ที่ยังไม่ถูกต้องตาม expected ว่าควรที่จะ out of domain เป็น true 
-เมื่อตรวจ Out-of-Domain ด้วย Guardrails openAI พบว่าระบบให้เหตุผลว่า out_of_domain เพราะอะไรได้ดี [reasoning out of domain column E](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI/test_case/evaluation_results.xlsx)
+เมื่อตรวจ Out-of-Domain ด้วย Guardrails openAI พบว่าระบบให้เหตุผลของ out_of_domain ได้ดี[reasoning out of domain column E](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI/test_case/evaluation_results.xlsx)
 
 **Test Case:**  
 [question_outofdomain_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx)
