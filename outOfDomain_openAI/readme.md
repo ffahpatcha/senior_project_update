@@ -45,6 +45,7 @@
 
 - พบว่า **1 cases** แยกไม่ตรงตาม expected  เป็น query เดียวกันกับในรอบก่อน ([ดูรายละเอียดผลลัพธ์เดิม](https://github.com/ffahpatcha/senior_project_update/tree/main/seniorProject_withStruture_Output_11_6#%E0%B8%9C%E0%B8%A5%E0%B8%A5%E0%B8%B1%E0%B8%9E%E0%B8%98%E0%B9%8C))
 - และ **1 cases** ที่เกิด clarification_needed=True
+  
 ผลลัพธ์พัฒนาในทางที่ดีขึ้น 
 
 **Test Case:**  
