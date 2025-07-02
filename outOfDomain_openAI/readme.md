@@ -8,8 +8,9 @@
 - pipeline: check Out-of-Domain ด้วย Guardrails จาก OpenAI -> check clarification -> check classification
 
 ## ปัญหา/แก้เพิ่ม
-- พอมาใช้จริงส่วนของ out of domain กับ clarification_needed ยังมีส่วนที่ intercept กันอยู่
-- ปรับลองเอา out of domain เอก เพื่อดูว่าส่วน calrification_needed จะให้ผลลออกมายังไงบ้าง
+- openAI ต้องมี credit เสียตัง
+- ปรับ code ให้เป็นระเบียบขึ้น
+- ปรับ prompt ของ dental_guardrail_agent เพิ่มเติม เนื่องจากมี case ที่ตรวจสอบว่า Query เป็นคำถาม out 0f domain หรือไม่ พบว่า คำถามว่า "ช่วยแต่ง caption ให้รูปนี้หน่อย" พบว่า out_of_domain = false 
 
 ## ผลลัพธ์
 
