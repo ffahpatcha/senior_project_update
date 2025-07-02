@@ -15,7 +15,8 @@
 
 ### 1. ตรวจสอบว่า Query จำเป็นต้อง Clarify เพิ่มเติมหรือไม่
 
-ผลลัพธ์พบว่าทุก test cases เป็นไปตาม expected
+ผลลัพธ์พบว่ามี 3  test cases ที่ไม่เป็นไปตาม expected ว่าควรที่จะ clarification เพิ่ม 
+- ทั้ง 3 case พบว่า out_of_domain = true
 
 **Test Case:**  
 [question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/pipeline_v2_clarity_first_25_6/test_case/question_clari_test.xlsx)
@@ -25,10 +26,10 @@
 
 
 ---
-### 2. ตรวจสอบว่า Query จำเป็นต้อง Clarify เพิ่มเติมหรือไม่ (test cases ใหม่: query ที่ดู out of domain ชัดเจน)
+### 2. ตรวจสอบว่า Query เป็นคำถาม out 0f domain หรือไม่ (test cases ใหม่: query ที่ดู out of domain ชัดเจน)
 
-พบว่ายังมี 2 case ที่ยังไม่ถูกต้องตาม expected
-
+พบว่ายังมี 1 case ที่ยังไม่ถูกต้องตาม expected ว่าควรที่จะ out of domain เป็น true 
+เมื่อตรวจ Out-of-Domain ด้วย Guardrails openAI พบว่าระบบให้เหตุผลว่า out_of_domain เพราะอะไรได้ดี [reasoning out of domain column E](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI/test_case/evaluation_results.xlsx)
 **Test Case:**  
 [question_outofdomain_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx)
 
@@ -41,15 +42,9 @@
 
 ### 3. ตรวจสอบว่า Query ถูกแยก Category ตรงตาม Expected หรือไม่
 
-**การแยกหมวดหมู่หลัก (Level 1):**
-
-- พบว่า **2 cases** แยกไม่ตรงตาม expected เป็น query เดียวกันกับในรอบก่อน
-- และ **2 cases**  ที่เกิด clarification_needed=True
-
-**การแยกหมวดหมู่ย่อย (Level 2):**
-
-- พบว่า **2 cases** แยกไม่ตรงตาม expected  เป็น query เดียวกันกับในรอบก่อน ([ดูรายละเอียดผลลัพธ์เดิม](https://github.com/ffahpatcha/senior_project_update/tree/main/seniorProject_withStruture_Output_11_6#%E0%B8%9C%E0%B8%A5%E0%B8%A5%E0%B8%B1%E0%B8%9E%E0%B8%98%E0%B9%8C))
-- และ **2 cases** ที่เกิด clarification_needed=True
+- พบว่า **1 cases** แยกไม่ตรงตาม expected  เป็น query เดียวกันกับในรอบก่อน ([ดูรายละเอียดผลลัพธ์เดิม](https://github.com/ffahpatcha/senior_project_update/tree/main/seniorProject_withStruture_Output_11_6#%E0%B8%9C%E0%B8%A5%E0%B8%A5%E0%B8%B1%E0%B8%9E%E0%B8%98%E0%B9%8C))
+- และ **1 cases** ที่เกิด clarification_needed=True
+ผลลัพธ์พัฒนาในทางที่ดีขึ้น 
 
 **Test Case:**  
 [question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/pipeline_v2_clarity_first_25_6/test_case/question_2categorylevel.xlsx)
