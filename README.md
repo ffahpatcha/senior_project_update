@@ -22,3 +22,15 @@
 
   - สรุปผล [result](https://github.com/ffahpatcha/senior_project_update/tree/main/pipeline_v2_clarity_first_25_6#%E0%B8%9C%E0%B8%A5%E0%B8%A5%E0%B8%B1%E0%B8%9E%E0%B8%98%E0%B9%8C)
 
+
+-- [**outOfDomain_google_error_2_7**](https://github.com/ffahpatcha/senior_project_update/tree/main/outOfDomain_google_error)
+  - ลองเพิ่มขั้นตอน **Delegation for Greetings & Farewells** เพื่อให้ Agent สามารถแบ่งหน้าที่ตอบคำทักทายและคำอำลาได้อัตโนมัติ [ดูขั้นตอนอย่างละเอียดที่นี่](https://google.github.io/adk-docs/tutorials/agent-team/#step-2-going-multi-model-with-litellm-optional)
+    - สร้าง agent Greeting Agent , Farewell Agent  [greeting_farewell_agents.py](https://github.com/ffahpatcha/senior_project_update/blob/main/outOfDomain_google_error/agents/greeting_farewell_agents.py)
+    - pipeline ใหม่ คือตรวจสอบว่าคำถามมีคำทักทายหรือคำอำลาหรือไม่ก่อน จากนั้นตามด้วย check_clarification -> check out of domain -> classification [query_classification_agent.py (บรรทัด 408–459)](https://github.com/ffahpatcha/senior_project_update/blob/main/outOfDomain_google_error/agents/query_classification_agent.py#L408-L459)
+  - ผล error
+    
+-- [**Out of domain OpenAI_2_7**](https://github.com/ffahpatcha/senior_project_update/tree/main/outOfDomain_openAI)
+  - ตรวจ Out-of-Domain ด้วย Guardrails [Guardrails ของ OpenAI Agents](https://openai.github.io/openai-agents-python/guardrails/) โดย integrate ใช้รวมกับ clarification และ classification (langgrah เดิม)
+    - ปรับเอา function ตรวจ out of domain เดิมออก นำ dental_guardrail_agent มาใช้ตรวจ out of domain แทน 
+    - ส่วนของ prompt ของ dental_guardrail_agent [dental_guardrail_agent.py](https://github.com/ffahpatcha/senior_project_update/blob/main/outOfDomain_openAI/my_agents/dental_guardrail_agent.py) มาจาก [query_classification_agent.py (บรรทัด 61–164)](https://github.com/ffahpatcha/senior_project_update/blob/main/seniorProject_withoutStructure_Output_18_6/agents/query_classification_agent.py#L61-L164)
+  - สรุปผล [result](สรุปผล [result](https://github.com/ffahpatcha/senior_project_update/tree/main/pipeline_v2_clarity_first_25_6#%E0%B8%9C%E0%B8%A5%E0%B8%A5%E0%B8%B1%E0%B8%9E%E0%B8%98%E0%B9%8C)
