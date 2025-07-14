@@ -1,0 +1,23 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	input_guardrail(input_guardrail)
+	classify_query(classify_query)
+	clarification_response_agent(clarification_response_agent)
+	fallback_response(fallback_response)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> input_guardrail;
+	classify_query -. &nbsp;retrieval_context_agent&nbsp; .-> __end__;
+	classify_query -.-> clarification_response_agent;
+	classify_query -. &nbsp;fallback_handler&nbsp; .-> fallback_response;
+	input_guardrail -. &nbsp;end&nbsp; .-> __end__;
+	input_guardrail -. &nbsp;continue&nbsp; .-> classify_query;
+	clarification_response_agent --> __end__;
+	fallback_response --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc
