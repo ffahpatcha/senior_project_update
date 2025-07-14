@@ -24,6 +24,7 @@
 
 **Output:**  
 [Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI/test_case/results_clari_outOfDomain_openAI.xlsx)
+<img width="1350" height="595" alt="image" src="https://github.com/user-attachments/assets/fe647eb5-71ea-4562-bb92-e35066e7e64b" />
 
 
 ---
@@ -37,6 +38,7 @@
 
 **Output:**  
 [Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI/test_case/evaluation_results.xlsx)
+<img width="2222" height="986" alt="image" src="https://github.com/user-attachments/assets/67e18bcb-388c-42ee-9a28-c5fd063a46eb" />
 
 
 
@@ -54,5 +56,6 @@
 
 **Output:**  
 [Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI/test_case/results_outOfDomain_openAI.xlsx)
+<img width="2163" height="918" alt="image" src="https://github.com/user-attachments/assets/9ff734b9-5682-480f-bdb2-83550ed4d4d3" />
 
 
