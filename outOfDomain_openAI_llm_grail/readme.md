@@ -1,56 +1,60 @@
-# Senior Project Date 18/6
+# Out of domain OpenAI llm grail Date 14/7
 ปรับ classification agent ต่อ
 
 ## Folders ที่มีการปรับหลัก
-- \agents\query_classification_agent.py
-  - ใช้ llm 3 ตัวในการแยก out of domain,clarification_needed,classify_categories เหมือน 11/6
-    ![workflow2-Page-16 drawio (2)](https://github.com/user-attachments/assets/e1b91215-8039-4397-a26c-180c9497a634)
-
-    
-  - ปรับ prompt ส่วน clarification_needed ให้ครอบคลุมมากขึ้น
-- main_graph.py
-- state_schema.py
-
+- ตรวจ Out-of-Domain ด้วย Guardrails [Guardrails ของ OpenAI Agents](https://openai.github.io/openai-agents-python/guardrails/) โดย integrate ใช้รวมกับ clarification และ classification (langgrah เดิม)
+  - ปรับเอา guardail ออกมานอก graph (เช็ค query ด้วย guardail ก่อนเข้า graph) ต่างจาก [guardail ใน ไฟล์นี้](https://github.com/ffahpatcha/senior_project_update/blob/main/outOfDomain_openAI/main_graph.py) ที่ guardail 	อยู่ ใน Graph
+- pipeline: check Out-of-Domain ด้วย Guardrails จาก OpenAI -> check clarification -> check classification
+- Entry Point ของ Graph คือ classify_query function 
 ## ปัญหา/แก้เพิ่ม
-- พอมาใช้จริงส่วนของ out of domain กับ clarification_needed ยังมีส่วนที่ intercept กันอยู่
-- ปรับลองเอา out of domain เอก เพื่อดูว่าส่วน calrification_needed จะให้ผลลออกมายังไงบ้าง
-
+- ปรับ prompt ของ dental_guardrail_agent เพิ่มเติม เนื่องจากมี case ที่ตรวจสอบว่า Query เป็นคำถาม out 0f domain หรือไม่ พบว่า คำถามว่า "ช่วยแต่ง caption ให้รูปนี้หน่อย" พบว่า out_of_domain = false 
+- เมื่อ Tripwire Triggered API Endpoint ตอบ JSON เลย ไม่รัน graph [main.py](outOfDomain_openAI_llm_grail/main.py)
 ## ผลลัพธ์
 
 ### 1. ตรวจสอบว่า Query จำเป็นต้อง Clarify เพิ่มเติมหรือไม่
 
-ผลลัพธ์พบว่า มี **9 cases** ที่ไม่เป็นคำถามที่ต้องการ clarify เพิ่มเติม  
-เมื่อพิจารณาสาเหตุที่ไม่ตรงตาม expected พบว่า query เหล่านั้นถูกจัดว่าเป็น **out_of_domain**
+ผลลัพธ์พบว่ามี 3  test cases ที่ไม่เป็นไปตาม expected ว่าควรที่จะ clarification เพิ่ม 
+- ทั้ง 3 case พบว่า out_of_domain = true
 
 **Test Case:**  
-[question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/question_clari_test.xlsx)
+[question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/pipeline_v2_clarity_first_25_6/test_case/question_clari_test.xlsx)
 
 **Output:**  
-[Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/output/results_clari3.xlsx)
+[Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI/test_case/results_clari_outOfDomain_openAI.xlsx)
+<img width="1212" height="906" alt="image" src="https://github.com/user-attachments/assets/8bf560ba-f5eb-4ff2-829e-509b072da6dc" />
 
-![Clarification Output](https://github.com/user-attachments/assets/dd42081c-054b-4ba5-a9c8-9c303805dffd)
+
+---
+### 2. ตรวจสอบว่า Query เป็นคำถาม out 0f domain หรือไม่ (test cases ใหม่: query ที่ดู out of domain ชัดเจน)
+
+พบว่ายังมี 1 case ที่ยังไม่ถูกต้องตาม expected ว่าควรที่จะ out of domain เป็น true 
+เมื่อตรวจ Out-of-Domain ด้วย Guardrails openAI พบว่าระบบให้เหตุผลของ out_of_domain ได้ดี[reasoning out of domain column E](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI/test_case/evaluation_results.xlsx)
+
+**Test Case:**  
+[question_outofdomain_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx)
+
+**Output:**  
+[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI/test_case/evaluation_results.xlsx)
+
+<img width="1389" height="735" alt="image" src="https://github.com/user-attachments/assets/61b403ac-c593-4277-9a0d-5d35bd4c757a" />
+
+
 
 ---
 
-### 2. ตรวจสอบว่า Query ถูกแยก Category ตรงตาม Expected หรือไม่
+### 3. ตรวจสอบว่า Query ถูกแยก Category ตรงตาม Expected หรือไม่
 
-**การแยกหมวดหมู่หลัก (Level 1):**
-
-- พบว่า **2 cases** แยกไม่ตรงตาม expected เป็น query เดียวกันกับที่เคยเกิดปัญหาในรอบก่อน 
-- และ **3 cases** ระบบเกิด error
-
-**การแยกหมวดหมู่ย่อย (Level 2):**
-
-- พบว่า **2 cases** แยกไม่ตรงตาม expected  
-- และ **3 cases** ระบบเกิด error   
-- โดย **2 cases ที่ error** เป็น query เดียวกันกับที่เคยเกิดปัญหาในรอบก่อน  
-  ([ดูรายละเอียดผลลัพธ์เดิม](https://github.com/ffahpatcha/senior_project_update/tree/main/seniorProject_withStruture_Output_11_6#%E0%B8%9C%E0%B8%A5%E0%B8%A5%E0%B8%B1%E0%B8%9E%E0%B8%98%E0%B9%8C))
+- พบว่า **1 cases** แยกไม่ตรงตาม expected  เป็น query เดียวกันกับในรอบก่อน ([ดูรายละเอียดผลลัพธ์เดิม](https://github.com/ffahpatcha/senior_project_update/tree/main/seniorProject_withStruture_Output_11_6#%E0%B8%9C%E0%B8%A5%E0%B8%A5%E0%B8%B1%E0%B8%9E%E0%B8%98%E0%B9%8C))
+- และ **1 cases** ที่เกิด clarification_needed=True
+  
+ผลลัพธ์พัฒนาในทางที่ดีขึ้น 
 
 **Test Case:**  
-[question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/question_2categorylevel.xlsx)
+[question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/pipeline_v2_clarity_first_25_6/test_case/question_2categorylevel.xlsx)
 
 **Output:**  
-[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/seniorProject_withoutStructure_Output_18_6/test_case/output/results4.xlsx)
+[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI/test_case/results_outOfDomain_openAI.xlsx)
+<img width="1534" height="680" alt="image" src="https://github.com/user-attachments/assets/eb662b59-0503-4f95-8b2f-72a5ef0e6832" />
 
-![Classification Output](https://github.com/user-attachments/assets/0033ecfa-f2d3-401e-ac76-4f890d1ed5dd)
+
 
