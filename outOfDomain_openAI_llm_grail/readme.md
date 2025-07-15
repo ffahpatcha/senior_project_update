@@ -9,7 +9,9 @@
 - Entry Point ของ Graph คือ classify_query function 
 ## ปัญหา/แก้เพิ่ม
 - ปรับ format json [main.py](https://github.com/ffahpatcha/senior_project_update/blob/main/outOfDomain_openAI_llm_grail/main.py)
-- สร้าง diagram เพื่อให้เห็นภาพการเชื่อมต่อ open ui 
+- สร้าง diagram เพื่อให้เห็นภาพการเชื่อมต่อ open ui
+  
+## ผลลัพธ์
 
 ### 1. ตรวจสอบว่า Query จำเป็นต้อง Clarify เพิ่มเติมหรือไม่
 
