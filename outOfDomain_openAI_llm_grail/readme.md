@@ -17,7 +17,7 @@
 [question_clari_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/pipeline_v2_clarity_first_25_6/test_case/question_clari_test.xlsx)
 
 **Output:**  
-[Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/outOfDomain_openAI_llm_grail/test_case/results_clari_11_7.xlsx)
+[Clarification_result.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI_llm_grail/test_case/results_clari_11_7.xlsx)
 <img width="1212" height="906" alt="image" src="https://github.com/user-attachments/assets/8bf560ba-f5eb-4ff2-829e-509b072da6dc" />
 
 
@@ -29,7 +29,7 @@
 [question_outofdomain_test.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/withoutOutofDomain_samePrompt_25_6/test_case/question_outofdomain_test.xlsx)
 
 **Output:**  
-[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/outOfDomain_openAI_llm_grail/test_case/outofdomain_results_11_7.xlsx)
+[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI_llm_grail/test_case/outofdomain_results_11_7.xlsx)
 
 <img width="1389" height="735" alt="image" src="https://github.com/user-attachments/assets/61b403ac-c593-4277-9a0d-5d35bd4c757a" />
 
@@ -45,7 +45,7 @@
 [question_2categorylevel.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/pipeline_v2_clarity_first_25_6/test_case/question_2categorylevel.xlsx)
 
 **Output:**  
-[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/outOfDomain_openAI_llm_grail/test_case/question_2categorylevel.xlsx)
+[Classification_Results.xlsx](https://raw.githubusercontent.com/ffahpatcha/senior_project_update/main/outOfDomain_openAI_llm_grail/test_case/question_2categorylevel.xlsx)
 <img width="1534" height="680" alt="image" src="https://github.com/user-attachments/assets/eb662b59-0503-4f95-8b2f-72a5ef0e6832" />
 
 
