@@ -4,10 +4,12 @@
 ## Folders ที่มีการปรับหลัก
 - ตรวจ Out-of-Domain ด้วย Guardrails [Guardrails ของ OpenAI Agents](https://openai.github.io/openai-agents-python/guardrails/) โดย integrate ใช้รวมกับ clarification และ classification (langgrah เดิม)
   - ปรับเอา guardail ออกมานอก graph (เช็ค query ด้วย guardail ก่อนเข้า graph) ต่างจาก [guardail ใน ไฟล์นี้](https://github.com/ffahpatcha/senior_project_update/blob/main/outOfDomain_openAI/main_graph.py) ที่ guardail 	อยู่ ใน Graph
+- เชื่อมกับ open webui
 - pipeline: check Out-of-Domain ด้วย Guardrails จาก OpenAI -> check clarification -> check classification
 - Entry Point ของ Graph คือ classify_query function 
 ## ปัญหา/แก้เพิ่ม
-
+- ปรับ format json [main.py](https://github.com/ffahpatcha/senior_project_update/blob/main/outOfDomain_openAI_llm_grail/main.py)
+- สร้าง diagram เพื่อให้เห็นภาพการเชื่อมต่อ open ui 
 
 ### 1. ตรวจสอบว่า Query จำเป็นต้อง Clarify เพิ่มเติมหรือไม่
 
