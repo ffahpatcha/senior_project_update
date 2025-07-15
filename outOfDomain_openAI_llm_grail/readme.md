@@ -7,9 +7,7 @@
 - pipeline: check Out-of-Domain ด้วย Guardrails จาก OpenAI -> check clarification -> check classification
 - Entry Point ของ Graph คือ classify_query function 
 ## ปัญหา/แก้เพิ่ม
-- ปรับ prompt ของ dental_guardrail_agent เพิ่มเติม เนื่องจากมี case ที่ตรวจสอบว่า Query เป็นคำถาม out 0f domain หรือไม่ พบว่า คำถามว่า "ช่วยแต่ง caption ให้รูปนี้หน่อย" พบว่า out_of_domain = false 
-- เมื่อ Tripwire Triggered API Endpoint ตอบ JSON เลย ไม่รัน graph [main.py](outOfDomain_openAI_llm_grail/main.py)
-## ผลลัพธ์
+
 
 ### 1. ตรวจสอบว่า Query จำเป็นต้อง Clarify เพิ่มเติมหรือไม่
 
