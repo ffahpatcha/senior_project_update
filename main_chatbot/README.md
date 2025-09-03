@@ -50,9 +50,10 @@
       
 ## ปัญหา/แก้เพิ่ม
 - input ที่เข้า node out of domain,clarify,classify,hybrid search เป็น latest query ซึ่งยังไม่แน่ใจว่าเหมาะสมกับ chatbot แล้วหรือยัง
-- input ที่เข้า node generate node มี query (latest question) กับ memory(message ส่วนของ user 2 อันท้าย
-- กรณีที่ clarify needed,out of domain = true  ถ้าระบบส่งคำตอบข้างต้นเหมาะสมแล้วหรือไม่ หรือควรที่จะมีการปรับเป็นตัวอย่าง question ขึ้นให้ user กด
+- input ที่เข้า node generate node มี query (latest question) กับ memory(message ส่วนของ user 2 อันท้าย)
+- กรณีที่ clarify needed,out of domain = true  ถ้าระบบส่งคำตอบข้างต้น(รูปภาพรวม คำตอบ chatbot) เหมาะสมแล้วหรือไม่ หรือควรที่จะมีการปรับให้หน้า ui ขึ้นเป็นตัวเลือก question ขึ้นให้ user กด
   
+
 
 
 
