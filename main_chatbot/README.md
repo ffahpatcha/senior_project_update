@@ -2,7 +2,7 @@
 ปรับ generate node 
 
 ## Folders หลัก
-- qdrant prepare
+- qdrant prepare [qdrant](https://github.com/ffahpatcha/senior_project_update/tree/main/main_chatbot/qdrant)
 - agents
   - out of domain checker node  [dental_guardrail_agent.py](https://github.com/ffahpatcha/senior_project_update/blob/main/main_chatbot/my_agents/dental_guardrail_agent.py)
   - query clarify node [query_classification_agent.py (บรรทัด 25–174)](https://github.com/ffahpatcha/senior_project_update/blob/main/outOfDomain_google_error/agents/query_classification_agent.py#L25-L174)
@@ -19,22 +19,28 @@
   
 ## ภาพรวมคำตอบ chatbot
 - กรณี out of domain
+  
   <img width="1039" height="415" alt="image" src="https://github.com/user-attachments/assets/0910587e-0585-4247-ab9c-3f99c4c72da3" />
 
 - กรณี clarify needed
+  
   <img width="1153" height="438" alt="image" src="https://github.com/user-attachments/assets/7f5c615b-c66b-431b-a6b4-dcd26d36aea8" />
 
 - กรณี ผ่านclassification node
   - prompt1
+    
     <img width="954" height="353" alt="image" src="https://github.com/user-attachments/assets/fa384e2a-5522-4ac5-a693-1eb97d61fa76" />
 
     - chunk ที่ retrieve มา เป็น context ที่สามารถตอบคำถามได้
+      
       <img width="1134" height="604" alt="image" src="https://github.com/user-attachments/assets/b9a47a71-4288-4368-b1cb-61cd2c71310e" />
 
     - chunk ที่ retrieve มา context ยังไม่เพียงพอสำหรับการตอบคำตอบ
+      
       <img width="1309" height="326" alt="image" src="https://github.com/user-attachments/assets/275c9906-d1ce-4422-aa12-402790dc03c4" />
 
   - prompt2
+    
     <img width="1729" height="898" alt="image" src="https://github.com/user-attachments/assets/389b04ab-aba5-4ba9-a2f8-1e5a1f645190" />
 
     - chunk ที่ retrieve มา เป็น context ที่สามารถตอบคำถามได้
@@ -47,6 +53,7 @@
 - input ที่เข้า node generate node มี query (latest question) กับ memory(message ส่วนของ user 2 อันท้าย
 - กรณีที่ clarify needed,out of domain = true  ถ้าระบบส่งคำตอบข้างต้นเหมาะสมแล้วหรือไม่ หรือควรที่จะมีการปรับเป็นตัวอย่าง question ขึ้นให้ user กด
   
+
 
 
 
