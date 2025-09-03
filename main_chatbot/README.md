@@ -41,11 +41,13 @@
 
   - prompt2
     
-    <img width="1729" height="898" alt="image" src="https://github.com/user-attachments/assets/389b04ab-aba5-4ba9-a2f8-1e5a1f645190" />
+    <img width="1707" height="887" alt="image" src="https://github.com/user-attachments/assets/d54a3da3-2534-47c0-b611-2db214013307" />
+
 
     - chunk ที่ retrieve มา เป็น context ที่สามารถตอบคำถามได้
-      <img width="890" height="298" alt="image" src="https://github.com/user-attachments/assets/1132252b-ae01-4888-85ae-0921863be384" />
+      
       <img width="916" height="338" alt="image" src="https://github.com/user-attachments/assets/fd9a69f4-fcad-4906-ac1d-cb1a24f19663" />
+      <img width="2055" height="772" alt="image" src="https://github.com/user-attachments/assets/48a17f47-f1c2-4cfb-832f-466cbf8ff1c9" />
 
       
 ## ปัญหา/แก้เพิ่ม
@@ -53,6 +55,7 @@
 - input ที่เข้า node generate node มี query (latest question) กับ memory(message ส่วนของ user 2 อันท้าย)
 - กรณีที่ clarify needed,out of domain = true  ถ้าระบบส่งคำตอบข้างต้น(รูปภาพรวม คำตอบ chatbot) เหมาะสมแล้วหรือไม่ หรือควรที่จะมีการปรับให้หน้า ui ขึ้นเป็นตัวเลือก question ขึ้นให้ user กด
   
+
 
 
 
