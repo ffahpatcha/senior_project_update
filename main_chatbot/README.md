@@ -8,6 +8,7 @@
   - query clarify node [query_classification_agent.py (บรรทัด 25–174)](https://github.com/ffahpatcha/senior_project_update/blob/main/outOfDomain_google_error/agents/query_classification_agent.py#L25-L174) : ใช้ llm meta-llama/Llama-3.3-70B-Instruct-Turbo จาก together.ai 
   - query classification node [query_classification_agent.py (บรรทัด 177-325)](https://github.com/ffahpatcha/senior_project_update/blob/main/outOfDomain_google_error/agents/query_classification_agent.py#L177-L325) : ใช้ llm meta-llama/Llama-3.3-70B-Instruct-Turbo จาก together.ai 
   - hybrid search node [hybrid_searcher.py](https://github.com/ffahpatcha/senior_project_update/blob/main/main_chatbot/my_agents/hybrid_searcher.py)
+    
     <img width="1823" height="1020" alt="image" src="https://github.com/user-attachments/assets/be845fca-905e-43e1-818a-399f338f4eb1" />
     <img width="1697" height="981" alt="image" src="https://github.com/user-attachments/assets/d6086fe4-7af4-43a6-a300-103c50c012f2" />
   - generate node [generate_agent.py](https://github.com/ffahpatcha/senior_project_update/blob/main/main_chatbot/my_agents/generate_agent.py) : ใช้ llm meta-llama/Llama-3.3-70B-Instruct-Turbo จาก together.ai 
@@ -55,6 +56,7 @@
 - input ที่เข้า node generate node มี query (latest question) กับ memory(message ส่วนของ user 2 อันท้าย)
 - กรณีที่ clarify needed,out of domain = true  ถ้าระบบส่งคำตอบข้างต้น(รูปภาพรวม คำตอบ chatbot) เหมาะสมแล้วหรือไม่ หรือควรที่จะมีการปรับให้หน้า ui ขึ้นเป็นตัวเลือก question ขึ้นให้ user กด
   
+
 
 
 
