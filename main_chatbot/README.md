@@ -11,7 +11,7 @@
     <img width="1823" height="1020" alt="image" src="https://github.com/user-attachments/assets/be845fca-905e-43e1-818a-399f338f4eb1" />
     <img width="1697" height="981" alt="image" src="https://github.com/user-attachments/assets/d6086fe4-7af4-43a6-a300-103c50c012f2" />
   - generate node [generate_agent.py](https://github.com/ffahpatcha/senior_project_update/blob/main/main_chatbot/my_agents/generate_agent.py)
-- main langgraph [main_graph.py](https://github.com/ffahpatcha/senior_project_update/blob/main/main_chatbot/main_graph.py)
+- main langgraph [main_graph.py](https://github.com/ffahpatcha/senior_project_update/blob/main/main_chatbot/main_graph.py) : ใช้ llm meta-llama/Llama-3.3-70B-Instruct-Turbo จาก together.ai 
   - เชื่อม pipeline |  query clarify node -> query classification node -> hybrid search node -> generate node
 - main router [main.py](https://github.com/ffahpatcha/senior_project_update/blob/main/main_chatbot/main.py)
   - out of domain checker -> langgraph 
@@ -55,6 +55,7 @@
 - input ที่เข้า node generate node มี query (latest question) กับ memory(message ส่วนของ user 2 อันท้าย)
 - กรณีที่ clarify needed,out of domain = true  ถ้าระบบส่งคำตอบข้างต้น(รูปภาพรวม คำตอบ chatbot) เหมาะสมแล้วหรือไม่ หรือควรที่จะมีการปรับให้หน้า ui ขึ้นเป็นตัวเลือก question ขึ้นให้ user กด
   
+
 
 
 
