@@ -42,3 +42,8 @@
   - สรุปผล [result](https://github.com/ffahpatcha/senior_project_update/blob/main/outOfDomain_openAI_llm_grail/readme.md#%E0%B8%9C%E0%B8%A5%E0%B8%A5%E0%B8%B1%E0%B8%9E%E0%B8%98%E0%B9%8C)
 
 - [**main_chatbot**](https://github.com/ffahpatcha/senior_project_update/tree/main/main_chatbot)
+  - main langgraph main_graph.py
+เชื่อม pipeline | query clarify node -> query classification node -> hybrid search node -> generate node
+  - main router main.py
+out of domain checker -> langgraph
+เชื่อม backend กับ frontend(openwebui) เชื่อมผ่าน fastAPI
